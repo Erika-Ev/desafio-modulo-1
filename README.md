@@ -89,3 +89,14 @@ O objetivo do projeto é demonstrar técnicas de análise de compatibilidade ent
 - Estruturação de código para fácil manutenção e expansão
 
 ---
+
+## 🚫 Técnicas Não Utilizadas
+
+Por falta de domínio e tempo, as seguintes técnicas importantes de JavaScript não foram aplicadas neste projeto:
+
+- **Callbacks**: Funções passadas como argumento para serem executadas após uma operação terminar. Muito usadas para lidar com tarefas assíncronas, mas podem gerar o chamado "callback hell" se usadas em excesso.
+- **Closure**: Função que "lembra" o escopo em que foi criada, permitindo acessar variáveis externas mesmo após o contexto original ter sido finalizado. Útil para encapsulamento e funções privadas.
+- **Promises**: Objetos que representam a eventual conclusão (ou falha) de uma operação assíncrona. Facilitam o encadeamento de operações e o tratamento de erros.
+- **Async/Await**: Sintaxe moderna para trabalhar com Promises de forma mais simples e legível, permitindo escrever código assíncrono com aparência síncrona.
+
+Essas técnicas são fundamentais para aplicações JavaScript mais avançadas e podem ser incorporadas em versões futuras do projeto.
