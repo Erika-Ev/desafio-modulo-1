@@ -32,6 +32,35 @@ const vagas = [
   },
 ];
 
+class Vaga {
+  constructor(id, empresa, cargo, requisitos, salario, modalidade) {
+    this.id = id;
+    this.empresa = empresa;
+    this.cargo = cargo;
+    this.requisitos = requisitos;
+    this.salario = salario;
+    this.modalidade = modalidade;
+  }
+
+  exibirResumo() {
+    console.log(
+      `Vaga: ${this.cargo} na empresa ${this.empresa} - Salário: R$${this.salario} - Modalidade: ${this.modalidade}`,
+    );
+  }
+}
+
+class VagaFrontEnd extends Vaga {
+  constructor(id, empresa, cargo, requisitos, salario, modalidade, nivel) {
+    super(id, empresa, cargo, requisitos, salario, modalidade);
+    this.area = "Front-end";
+    this.nivel = nivel;
+  }
+
+  exibirNivel() {
+    console.log(`Nível da vaga: ${this.nivel}`);
+  }
+}
+
 // -----------------------FUNÇÕES-----------------------
 
 // Função para verificar se o candidato atende aos requisitos da vaga
